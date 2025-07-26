@@ -1,15 +1,16 @@
 {
   "dependencies": {
-    "express": "^5.1.0"
+    "dotenv": "^17.2.1",
+    "express": "^5.1.0",
+    "mongoose": "^8.16.5"
   },
   "name": "language-learning-api",
   "version": "1.0.0",
   "description": "Complete version of Express Notes project for user and language resource management API",
   "main": "app.js",
-  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev" : "node app.js"
+    "dev": "nodemon app.js"
   },
   "repository": {
     "type": "git",

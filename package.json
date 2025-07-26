@@ -1,0 +1,24 @@
+{
+  "dependencies": {
+    "express": "^5.1.0"
+  },
+  "name": "language-learning-api",
+  "version": "1.0.0",
+  "description": "Complete version of Express Notes project for user and language resource management API",
+  "main": "app.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev" : "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mdhjbl/language-learning-api.git"
+  },
+  "author": "king",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mdhjbl/language-learning-api/issues"
+  },
+  "homepage": "https://github.com/mdhjbl/language-learning-api#readme"
+}

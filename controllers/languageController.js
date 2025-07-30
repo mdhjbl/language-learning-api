@@ -1,3 +1,5 @@
+languageModel = require("../models/languageModel")
+
 exports.createLanguage = (req, res) => { /* ... */ }
 exports.getAllLanguages = (req, res) => { /* ... */ }
 exports.getLanguageById = (req, res) => { /* ... */ }

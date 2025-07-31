@@ -1,11 +1,10 @@
 const express = require("express");
-const languageValidator = require("../validations/languageValidation")
 const languageController = require("../controllers/languageController"); 
 const languageRouter = express.Router();
 
 languageRouter
     .route("/")
-    .post(languageValidator, languageController.createlanguage)     
+    .post(languageController.createlanguage)     
     .get(languageController.getAlllanguages);    
 
 

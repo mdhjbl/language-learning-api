@@ -8,20 +8,18 @@ const languageSchema = new mongoose.Schema({
     trim: true
   },
   difficulty: {
+    type: Number,
+    enum: [1, 2, 3, 4, 5] 
+  },
+   category: {
     type: String,
-    enum: ['easy', 'medium', 'hard'],
-    default: 'medium'
+    max : 500
   },
   stars: {
     type: Number,
     min: 0,
     max: 5,
     default: 3
-  },
-  category: {
-    type: String,
-    enum: ['frontend', 'backend', 'fullstack', 'other'],
-    default: 'other'
   },
   description: {
     type: String,

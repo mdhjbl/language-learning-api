@@ -10,5 +10,6 @@ const Schema = {
 };
 
 
-module.exports = v.Schema.compile(Schema)
+const check = v.compile(Schema);
+module.exports = check;
 

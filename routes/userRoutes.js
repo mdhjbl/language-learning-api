@@ -1,10 +1,11 @@
 const express = require("express");
+const userValidator = require("../validations/userValidation")
 const userController = require("../controllers/userController"); 
 const userRouter = express.Router();
 
 userRouter
     .route("/")
-    .post(userController.createUser)     
+    .post(userValidator ,userController.createUser)     
     .get(userController.getAllUsers);    
 
 

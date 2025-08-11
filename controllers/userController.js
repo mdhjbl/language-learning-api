@@ -46,7 +46,17 @@ exports.createUser = async(req, res) => {
 }
 
 
-exports.getAllUsers = (req, res) => { /* ... */ }
+exports.getAllUsers = async(req, res) => { 
+    try{
+        const users = await userModel.find()
+        res.json(users)
+      }catch(err){
+        res.status(500).json({
+            message: "Something went wrong",
+            error: error.message
+        })
+      }
+}
 exports.getUserById = (req, res) => { /* ... */ }
 exports.updateUserById = (req, res) => { /* ... */ }
 exports.deleteUserById = (req, res) => { /* ... */ }

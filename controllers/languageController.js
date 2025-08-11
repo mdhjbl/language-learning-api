@@ -46,8 +46,16 @@ exports.createlanguage = async (req, res) => {
 };
 
 
-exports.getAlllanguages = (req, res) => {
-  res.send("Get all languages not implemented yet");
+exports.getAlllanguages = async(req, res) => {
+  try{
+    const languages = await languageModel.find()
+    res.json(languages)
+  }catch(err){
+    res.status(500).json({
+        message: "Something went wrong",
+        error: error.message
+    })
+  }
 };
 
 exports.getlanguageById = (req, res) => {
